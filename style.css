@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ballsHeader{
+    height: 230px;
+    display: inherit;
+    justify-content: center;
+}
+.grow1{
+    transform: scale(70);
+    transition-duration: 1s;
+}
+.grow2{
+    transform: scale(120);
+    transition-duration: 0.7s;
+}
+.grow3{
+    transform: scale(200);
+    transition-duration: 0.5s;
+}
+
+#yellowBall{
+    width: 1px;
+    height: 1px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 50px;
+    align-self: center;
+}
+#redBall{
+    width: 1px;
+    height: 1px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 90px 50px;
+}
+#userBall{
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 50%;
+    margin: 115px 120px 30px 120px;
+    display: inherit;
+    justify-content: center;
+}
+#blueBall{
+    width: 1px;
+    height: 1px;
+    background-color: rgb(44, 178, 255);
+    border-radius: 50%;
+    margin: 150px 50px;
+}
+#greenBall{
+    width: 1px;
+    height: 1px;
+    background-color: rgb(27, 235, 27);
+    border-radius: 50%;
+    margin-left: 50px;
+    align-self: center;
+}
+
+#myLinks{
+    display: inherit;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+main{
+    margin: 0px 50px 10px 50px;
+    flex: 1;
+    border-radius: 50px;
+    border: 1px solid rgb(196, 196, 196);
+    box-shadow: 0 0 10px rgb(161, 161, 161);
+    z-index: 10;
+}
