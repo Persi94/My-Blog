@@ -1,31 +1,58 @@
 body{
     margin: 0;
+    position: relative;
+}
+
+#background-balls{
+    right: 0;
+    left: 0;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+}
+#large-corporeal-ball{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 136, 0, 0.466);
+    border-radius: 0 0 100% 0;
+    filter: blur(5px);
+}
+#small-dark-blue-ball{
+    margin-top: 60px;
+    margin-right: -100px;
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 63, 121, 0.671);
+    border-radius: 50%;
+    filter: blur(5px);
+}
+
+main{
+    position: absolute;
+    left: 30%;
+    z-index: 1000;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-}
-
-#ballsHeader{
     height: 230px;
-    display: inherit;
+    display: flex;
     justify-content: center;
 }
-.grow1{
+
+.grow-small-yellow-and-green-balls{
     transform: scale(70);
     transition-duration: 1s;
 }
-.grow2{
+.grow-medium-red-and-blue-balls{
     transform: scale(120);
     transition-duration: 0.7s;
 }
-.grow3{
+.grow-large-purple-ball{
     transform: scale(200);
     transition-duration: 0.5s;
 }
 
-#yellowBall{
+#yellow-ball{
     width: 1px;
     height: 1px;
     background-color: yellow;
@@ -33,30 +60,30 @@ header{
     margin-right: 50px;
     align-self: center;
 }
-#redBall{
+#red-ball{
     width: 1px;
     height: 1px;
     background-color: red;
     border-radius: 50%;
-    margin: 90px 50px;
+    margin: 80px 50px;
 }
-#userBall{
+#user-ball{
     width: 1px;
     height: 1px;
-    background-color: rgb(255, 0, 255);
+    background-color: rgb(183, 0, 255);
     border-radius: 50%;
     margin: 115px 120px 30px 120px;
     display: inherit;
     justify-content: center;
 }
-#blueBall{
+#blue-ball{
     width: 1px;
     height: 1px;
     background-color: rgb(44, 178, 255);
     border-radius: 50%;
     margin: 150px 50px;
 }
-#greenBall{
+#green-ball{
     width: 1px;
     height: 1px;
     background-color: rgb(27, 235, 27);
@@ -65,19 +92,23 @@ header{
     align-self: center;
 }
 
-#myLinks{
-    display: inherit;
+content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    border: 1px solid rgb(196, 196, 196);
+    box-shadow: 0 0 10px rgb(161, 161, 161);
+}
+
+#navbar-menu{
+    list-style-type: none;
+    display: flex;
+}
+
+#my-links{
+    display: flex;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 120%;
-}
-
-main{
-    margin: 0px 50px 10px 50px;
-    flex: 1;
-    border-radius: 50px;
-    border: 1px solid rgb(196, 196, 196);
-    box-shadow: 0 0 10px rgb(161, 161, 161);
-    z-index: 10;
 }
