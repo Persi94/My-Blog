@@ -3,21 +3,21 @@ body{
     position: relative;
 }
 
-#background-balls{
+.background-balls{
     right: 0;
     left: 0;
     position: absolute;
     justify-content: space-between;
     display: flex;
 }
-#large-corporeal-ball{
+.large-corporeal-ball{
     height: 500px;
     width: 500px;
     background-color: rgba(255, 136, 0, 0.466);
     border-radius: 0 0 100% 0;
     filter: blur(5px);
 }
-#small-dark-blue-ball{
+.small-dark-blue-ball{
     margin-top: 60px;
     margin-right: -100px;
     height: 500px;
@@ -29,7 +29,9 @@ body{
 
 main{
     position: absolute;
-    left: 30%;
+    right: 0;
+    left: 0;
+    margin: 0 40px 10px 40px;
     z-index: 1000;
 }
 
@@ -39,15 +41,15 @@ header{
     justify-content: center;
 }
 
-.grow-small-yellow-and-green-balls{
+.grow-small-x70{
     transform: scale(70);
     transition-duration: 1s;
 }
-.grow-medium-red-and-blue-balls{
+.grow-medium-x120{
     transform: scale(120);
     transition-duration: 0.7s;
 }
-.grow-large-purple-ball{
+.grow-large-x200{
     transform: scale(200);
     transition-duration: 0.5s;
 }
@@ -92,20 +94,49 @@ header{
     align-self: center;
 }
 
-content{
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px;
-    border: 1px solid rgb(196, 196, 196);
-    box-shadow: 0 0 10px rgb(161, 161, 161);
-}
-
-#navbar-menu{
+.navbar-menu{
+    position: sticky;
     list-style-type: none;
     display: flex;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(161, 161, 161);
+    background-color: white; 
+    padding: 5px 1px 5px 25px;
+}
+.navbar-links{
+    margin-right: 20px;
+    padding-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    user-select: none;
+    border-right: 2px solid rgba(0, 0, 0, 0.356);
+}
+.navbar-links > a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.37);
+    transition: 0.3s;
+}
+.navbar-links > a:hover{
+    color: rgba(0, 0, 0, 0.753);
 }
 
-#my-links{
+.navbar-links:last-child{
+    border-right: none;
+}
+.navbar-search-input > a{
+    background-image: url(images/searchIcon.png);
+    height: 30px;
+    width: 30px;
+}
+
+content{
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgb(161, 161, 161);
+    background-color: white;
+}
+
+.my-links{
     display: flex;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
