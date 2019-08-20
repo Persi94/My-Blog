@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 document.addEventListener('scroll',function(){
-    if(document.body.scrollTop > 350 || document.documentElement.scrollTop > 350){
+    if((window.scrollY || window.scrollTop || document.getElementsByTagName('html')[0].scrollTop) > 260){
         document.getElementById('navbar-menu').removeAttribute('class','navbar-no-changed');
         document.getElementById('navbar-menu').setAttribute('class','navbar-change-on-scroll');
         document.getElementById('home-button').setAttribute('class','navbar-home-button-change-on-scroll');
