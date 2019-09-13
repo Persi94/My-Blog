@@ -4,112 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to My-Blog!</title>
+    <title>Welcome to my Cutaway-page!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-balls">
-        <div class="large-corporeal-ball"></div>
-        <div class="small-dark-blue-ball"></div>
-    </div>
+    <header>
+        <div id="header-logo">
+            <img src="images/gear.jpg" alt="logo" id="logo">
+            <p>Welcome to my Cutaway-page!</p>
+        </div>
+        <div id="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
-        <header>
-            <div id="yellow-ball"></div>
-            <div id="red-ball"></div>
-            <div id="user-ball"></div>
-            <div id="blue-ball"></div>
-            <div id="green-ball"></div>
-        </header>
-        <ul id="navbar-menu" class="navbar-no-changed">
-            <li class="navbar-links"><a id="home-button" href="#">Home</a></li>
-            <li class="navbar-links"><a href="#">All-News</a></li>
-            <li class="navbar-links"><a href="#">About</a></li>
-        </ul>
-        <content>
-            <div class="news-and-sidebar-column">
-                <div class="news">
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                </div>
-                <div class="sidebar">123</div>
-            </div>
-        </content>
-        <footer>
-            <!-- <ul class="myLinks">
-                <li><p>My links:</p></li>
-                <li><img src="images/vkLink.png" alt="vk"></li>
-                <li><img src="images/steamLink.png" alt="steam"></li>
-            </ul> -->
-        </footer>
+        <slide>
+            <ul id="slide-show">
+                <li class=""><img src="images/okean1.jpg" alt="okean1" class="slide-show-img"></li>
+                <li class="hide-slide"><img src="images/okean2.jpg" alt="okean2" class="slide-show-img"></li>
+                <li class="hide-slide"><img src="images/okean3.jpg" alt="okean3" class="slide-show-img"></li>
+            </ul>
+            <ul id="slide-dots">
+                <li onclick="nextSlide()"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </slide>    
+        <calc>
+            <div id="num-display"></div>
+            <div id="num-btn"></div>
+        </calc>
     </main>
+    <footer>
+        123
+    </footer>
     <script src="global.js"></script>
 </body>
 </html>
