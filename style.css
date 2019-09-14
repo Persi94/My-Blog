@@ -66,10 +66,9 @@ header{
     margin-top: 0;
     margin-bottom: 0;
 }
-.hide-slide{
-    display: none;
+#slide-show > li{
+    
 }
-
 .hide-slide{
     display: none;
 }
