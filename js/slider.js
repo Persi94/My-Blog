@@ -6,4 +6,4 @@ setInterval(function(){
     slideChilds[i].classList.add('hide-slide');
     i = (i+1)%slideChilds.length;
     slideChilds[i].classList.remove('hide-slide');
-},3000)
+},5000)

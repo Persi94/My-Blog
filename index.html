@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <i id="arrow-to-top"></i>
     <header>
         <div id="header-logo">
             <img src="images/gear.jpg" alt="logo" id="logo">
@@ -34,14 +35,41 @@
                 <li onclick="currentSlide()"></li>
             </ul>
         </slide>    
-        <calc>
-            <div id="num-display"></div>
-            <div id="num-btn"></div>
+        <div id="calculate">
+            <input id="num-display" placeholder="0" readonly></input>
+            <table id="num-btn">
+                <tr>
+                    <td onclick="addition()">+</td>
+                    <td onclick="substraction()">-</td>
+                    <td onclick="multiplication()">*</td>
+                    <td onclick="division()">/</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td onclick="clear()">C</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td onclick="result()">=</td>
+                </tr>
+            </table>
         </calc>
     </main>
     <footer>
         123
     </footer>
-    <script src="global.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/arrow-top.js"></script>
 </body>
 </html>
