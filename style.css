@@ -111,12 +111,14 @@ header{
 #calculate{
     border: 1px solid black;
     width: 300px;
-    height: 400px;
+    height: auto;
     margin: 80px 0;
 }
 #num-display{
-    height: 100px;
+    height: auto;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid black;
     border: none;
     font-size: 20px;
